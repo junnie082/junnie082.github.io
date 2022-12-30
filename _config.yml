@@ -134,7 +134,7 @@ yat:
 # it will be always kept on every visit (i.e. no matter
 # the browser is closed or not)
 #
-# night_mode: "auto"
+night_mode: "off"
 
 # Code badge setting
 # You can enable or disable the code badge and so on
@@ -158,7 +158,7 @@ defaults:
   home:
     heading: "Jun's Programming Blog"
     subheading: "Studying Computer Science in College Since 2021"
-    banner: "/assets/images/banners/blogJun.png"
+    banner: "/assets/images/banners/blogJun.png" # index.html 의 banner: 에서 바꿀 수 있음. 
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
