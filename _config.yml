@@ -157,8 +157,8 @@ yat:
 defaults:
   home:
     heading: "Jun's Programming Blog"
-    subheading: "Studying Computer Science in College since 2021"
-    banner: "assets/images/banners/blogJun.png"
+    subheading: "Studying Computer Science in College Since 2021"
+    banner: "/assets/images/banners/blogJun.png"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
