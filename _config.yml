@@ -154,11 +154,11 @@ yat:
 #   - about.md
 
 # Page default value
-# defaults:
-#   home:
-#     heading: "Your awesome heading"
-#     subheading: "Your awesome subheading"
-#     banner: "Your image url"
+defaults:
+  home:
+    heading: "Jun's Programming Blog"
+    subheading: "Studying Computer Science in College since 2021"
+    banner: "assets/images/banners/blogJun.png"
 
 # Banner default settings
 # These banner settings are for global banner default, but you can also
