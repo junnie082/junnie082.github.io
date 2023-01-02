@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: An exhibit of Markdown
 subtitle: Each post also has a subtitle
@@ -91,4 +91,4 @@ There's actually a lot more to Markdown than this. See the official [introductio
   [2]: https://www.fileformat.info/info/unicode/char/2163/index.htm
   [3]: https://www.markitdown.net/
   [4]: https://daringfireball.net/projects/markdown/basics
-  [5]: https://daringfireball.net/projects/markdown/syntax
+  [5]: https://daringfireball.net/projects/markdown/syntax -->

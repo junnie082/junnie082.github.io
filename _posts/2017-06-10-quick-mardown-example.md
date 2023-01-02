@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: Quick markdown example
 subtitle: This is a quick markdown example
@@ -161,4 +161,4 @@ math should get its own line like so:
 $$I = \int \rho R^{2} dV$$
 
 And note that you can backslash-escape any punctuation characters
-which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc. -->

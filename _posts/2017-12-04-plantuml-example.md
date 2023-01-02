@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: post
 title: Plantuml example
 categories: example
@@ -63,4 +63,4 @@ User --> (Use)
 
 MySql --> (Use)
 
-@enduml
+@enduml -->
