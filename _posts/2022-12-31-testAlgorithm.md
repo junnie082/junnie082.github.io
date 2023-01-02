@@ -3,7 +3,7 @@ layout: post
 title: Algorithm) Baekjoon /#11047. 동전 0
 subtitle: Greedy Algorithm, C
 author: Jun
-categories: Algorithm
+categories: example
 banner:
   video: https://vjs.zencdn.net/v/oceans.mp4
   loop: true
