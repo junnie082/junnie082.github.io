@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: post
 title: Table example
 subtitle:
@@ -108,4 +108,4 @@ Table cell can be set alignment separately.
 |^^   C. Banana      ||   It's OK! ![example image][my-image]  |
 
 [my-image]: http://www.unexpected-vortices.com/sw/rippledoc/example-image.jpg "An exemplary image"
- -->
+
