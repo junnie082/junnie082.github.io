@@ -219,5 +219,5 @@ plugins:
   - jekyll-spaceship
 
 
-category_path: "category" # <- default value
-category_layout: "categories" # <- default value
+# category_path: "category" # <- default value
+# category_layout: "categories" # <- default value
