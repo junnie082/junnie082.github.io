@@ -157,7 +157,7 @@ night_mode: "off"
 defaults:
   home:
     heading: "Jun's Programming Blog"
-    subheading: "Studying Computer Science in College Since 2021"
+    subheading: "Studying Computer Science & Engineering in College Since 2021"
     banner: "/assets/images/banners/blogJun.png" # index.html 의 banner: 에서 바꿀 수 있음. 
 
 # Banner default settings
