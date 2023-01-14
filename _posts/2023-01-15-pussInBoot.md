@@ -3,7 +3,7 @@ layout: post
 title: 장화신은 고양이-끝내주는 모험
 subtitle: 첫 영화 감상문!
 author: Jun
-categories: Movies
+categories: [Movies]
 banner:
   video: # https://vjs.zencdn.net/v/oceans.mp4
   loop: true
