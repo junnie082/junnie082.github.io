@@ -1,7 +1,23 @@
 ---
 layout: post
 title: 장화신은 고양이-끝내주는 모험
+subtitle: 첫 영화 감상문!
+author: Jun
 categories: Movies
+banner:
+  video: # https://vjs.zencdn.net/v/oceans.mp4
+  loop: true
+  volume: # 0.8
+  start_at: 8.5
+  image: # https://bit.ly/3xTmdUP
+  opacity: 0.618
+  background: "#000"
+  height: "100vh"
+  min_height: "38vh"
+  heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
+  subheading_style: "color: gold"
+tags: 
+sidebar: []
 ---
 
 Dreamworks가 정말 영화를 잘 만든다고 생각한 것이 <슈렉>을 봤을 때다. 어렸을 때 여러 번 봤고, 성인이 되었을 때 다시 한 번 봤다. 다 큰 지금 다시 돌려 보아도 <슈렉>이 유치하게 느껴지지 않고 유쾌하면서 여운이 남는다. 
