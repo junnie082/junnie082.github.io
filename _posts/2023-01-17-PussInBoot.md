@@ -20,7 +20,7 @@ tags:
 sidebar: []
 ---
 
-![PussInBoot](https://www.youtube.com/watch?v=ywLhD836XWs)
+[![Video Label](http://img.youtube.com/vi/gOQmkggSJ6A/0.jpg)](https://youtu.be/gOQmkggSJ6A)
 
 Dreamworks가 정말 영화를 잘 만든다고 생각한 것이 <슈렉>을 봤을 때다. 어렸을 때 여러 번 봤고, 성인이 되었을 때 다시 한 번 봤다. 다 큰 지금 다시 돌려 보아도 <슈렉>이 유치하게 느껴지지 않고 유쾌하면서 여운이 남는다. 
 
