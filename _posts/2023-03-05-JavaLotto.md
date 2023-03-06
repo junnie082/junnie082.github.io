@@ -163,6 +163,26 @@ public class LottoApplication {
 
     static double value = 0; 
 
+    public int getKindOfLotto() {
+        Scanner input = new Scanner(System.in); 
+        int kindLotto;
+
+        while (true) {
+            try {
+                Exception e = new IllegalArgumentException();
+                kindLotto = input.nextInt();
+                if (kindLotto < 1 || kindLotto > 3) {
+                    throw e; 
+                }
+                break;
+            } catch (Exception e) {
+                System.out.println("[ERROR] 로또의 종류는 작은 로또(1), 중간 로또(2), 큰 로또(3) 세 가지 뿐입니다. 다시 입력해 주세요:");
+            }
+        }
+
+        return kindLotto;
+    }
+
     public int getPaid() {       // 로또를 구매하기 위해 지불할 돈을 입력 받는다. 한 장에 1000원 이므로 반드시 금액은 1000으로 나누어 떨어져야 한다. 
         Scanner input = new Scanner(System.in); 
         int paid; 
@@ -173,7 +193,7 @@ public class LottoApplication {
                 if (paid % 1000 != 0) throw e; 
                 return paid;
             } catch (Exception e) {
-                System.out.println("다시 입력 하세요: ");
+                System.out.println("[ERROR] 로또 한 장은 1,000원이므로, 지불 금액은 반드시 1000의 배수여야 합니다. 다시 입력 하세요: ");
             }
         }
     }
@@ -221,20 +241,20 @@ public class LottoApplication {
         }
     }
 
-    public void getWinNumbers() {      // 당첨 번호를 입력 받는다. 번호는 반드시 1~45 사이어야 한다. 
+    public void getWinNumbers() {      // 당첨 번호를 입력 받는다. 번호는 반드시 1~45 사이여야 한다. 
         Scanner input = new Scanner(System.in); 
-        String[] winNumber = input.nextLine().split(","); 
+        String[] winNumber = input.nextLine().split(",");; 
         for (int i = 0; i < 6; i++) {
             try {
                 Exception e = new IllegalArgumentException();
-                if (Integer.parseInt(winNumber[i]) < 1 || Integer.parseInt(winNumber[i]) > 45) {
+                if (Integer.parseInt(winNumber[i]) < 1 || Integer.parseInt(winNumber[i]) > 45 || winNumber.length < 1 || winNumber.length > 6) {
                     throw e;
                 }
-            } catch (Exception e){
-                System.out.println("[ERROR] 로또 번호는 1부터 45 사이의 숫자여야 합니다.");
-                winNumber = input.nextLine().split(","); 
+            } catch (Exception e) {
+                System.out.println("[ERROR] 로또 번호는 1부터 45 사이의 6개의 숫자여야 합니다.");
+                winNumber = input.nextLine().split(",");
                 i = 0; continue; 
-            }
+            } 
             winNumbers[i] = Integer.parseInt(winNumber[i]); 
         }
     }
@@ -326,6 +346,8 @@ public class LottoApplication {
     // ** 가능한 예외 상황:
     //  - 로또 번호를 1~45 사이의 정수가 아닌 수를 입력 받았을 때. ==> 해결됨. 
     //  - 낸 돈이 1000으로 나누어 떨어지지 않을 때. ==> 해결됨. 
+    //  - 입력된 당첨 번호의 개수가 1보다 작거나 6보다 클 때. ==> 해결됨. 
+    //  - 로또 종류를 입력 받을 때 1, 2, 3 가 아닌 다른 수를 입력 받을 때. ==> 해결됨. 
     // 3. Java Enum을 적용한다. 
     //  - Enum 자료구조에 대한 공부가 더 필요할 듯... 어떻게 사용해야 하지. 어떤 기능에 적용해야 할까?
 
@@ -336,7 +358,7 @@ public class LottoApplication {
         LottoApplication lottoApplication = new LottoApplication(); 
 
         System.out.println("구입할 로또 종류를 선택해주세요. (작은 로또: 1, 중간 로또: 2, 큰 로또: 3)");
-        int kindLotto = input.nextInt();
+        int kindLotto = lottoApplication.getKindOfLotto(); 
 
         System.out.println("구입금액을 입력해 주세요."); 
         int paid = lottoApplication.getPaid(); 
@@ -344,12 +366,11 @@ public class LottoApplication {
         System.out.println(Integer.toString(paid/1000) + "개를 구매했습니다.");
         lottoApplication.createRandomNumbers(paid);
         lottoApplication.showRandomNumbers(paid);
-        input.nextLine(); 
 
-        System.out.println("당첨 번호를 입력해 주세요.");
+        System.out.println("당첨 번호를 입력해 주세요:");
         lottoApplication.getWinNumbers();
 
-        System.out.println("보너스 번호를 입력해 주세요.");
+        System.out.println("보너스 번호를 입력해 주세요:");
         // winNumbers[6] = bonus;        // 이거 왜 안되는 거지?   
         lottoApplication.getBonusNumber(); 
 
@@ -386,23 +407,70 @@ public class LottoApplication {
 `도메인`을 적절하게 적용하라는 얘기도... 사실 모르겠다. 
 
 
+## 예외 사항 처리하기
+
+예외 사항은 모두 try-catch 문으로 처리하도록 노력했다. 실은, while 문이나 if 문만으로도 충분히 처리할 수 있을 것 같았지만, try-catch 문에 익숙해질 필요가 있다고 느껴, 이번 과제에서는 최대한 이 구문을 사용하도록 노력하였다. 
 
 ## Java Enum을 적용한다.
 
 Enum 자료구조를 어디에, 어떻게 사용해야 하나 고민을 해보았지만 아이디어가 떠오르지 않는다.
 Enum 자료구조에 대한 이해도나 사용 방법에 대해 더 공부를 해보아야 할 것이고, 이 자료구조를 어떤 기능을 위하여 사용할 수 있을지도 생각해 보아야할 일이다. 
 
+![enum1](/assets/images/banners/2023-03-05/enum1.jpg)
+![enum2](/assets/images/banners/2023-03-05/enum2.jpg)
+![enum3](/assets/images/banners/2023-03-05/enum3.jpg)
+![enum4](/assets/images/banners/2023-03-05/enum4.jpg)
+![enum5](/assets/images/banners/2023-03-05/enum5.jpg)
+![enum6](/assets/images/banners/2023-03-05/enum6.jpg)
+![enum7](/assets/images/banners/2023-03-05/enum7.jpg)
+![enum8](/assets/images/banners/2023-03-05/enum8.jpg)
+![enum9](/assets/images/banners/2023-03-05/enum9.jpg)
+![enum10](/assets/images/banners/2023-03-05/enum10.jpg)
 
 
-## 예외 사항 처리하기
+## Enum 클래스를 이렇게 바꿔보면 어떨까?
 
-예외 사항은 모두 try-catch 문으로 처리하도록 노력했다. 실은, while 문이나 if 문만으로도 충분히 처리할 수 있을 것 같았지만, try-catch 문에 익숙해질 필요가 있다고 느껴, 이번 과제에서는 최대한 이 구문을 사용하도록 노력하였다. 
+{% highlight Java %}
 
+enum Prize {
+    FIRST_PRIZE("2,000,000", "50,000,000", "2,147,000,000"), 
+    SECOND_PRIZE("30,000", "3,000,000", "850,000"), 
+    THIRD_PRIZE("1,500", "150,000", "10,000"), 
+    FOURTH_PRIZE("500", "50,000", "0"), 
+    FIFTH_PRIZE("100", "5,000", "0"),
+    WON("원) -"),
+    GAE("개\n");
+
+    final private String small; 
+    final private String middle;
+    final private String big;
+    public String getName() {
+        return small; 
+    }
+    private Prize(String small, String middle, String big) {
+        this.small = small; 
+        this.middle = middle; 
+        this.big = big;
+    }
+}
+
+{% endhighlight %}
+
+그리고 Enum상수를 `Prize.FIRST_PRIZE.big` 이런 식으로 불러올 수 있을 것이다. 
+
+### Controller, Service, Repository
+
+![spring1](/assets/images/banners/2023-03-05/spring1.jpg)
+![spring2](/assets/images/banners/2023-03-05/spring2.jpg)
+![spring3](/assets/images/banners/2023-03-05/spring3.jpg)
+![spring4](/assets/images/banners/2023-03-05/spring4.jpg)
+![spring5](/assets/images/banners/2023-03-05/spring5.jpg)
+![spring6](/assets/images/banners/2023-03-05/spring6.jpg)
+![spring7](/assets/images/banners/2023-03-05/spring7.jpg)
 
 ## 궁금한 점
 
 왜 main 함수의 예약어 중에서 static 을 빼면 안될까? static 을 빼면, main 함수 밖에 선언한 변수나 자료구조들을 자유롭게 끌어다 쓸 수 있을 것 같은데 말이다. 
-
 
 
 
