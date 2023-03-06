@@ -3,7 +3,7 @@ layout: post
 title: 로또 프로그램
 subtitle: 2023 TCP 스프링스프링) Java Sprig 스터디
 author: Jun
-categories: Web
+categories: Web(Back-End)
 banner:
   video: #https://vjs.zencdn.net/v/oceans.mp4
   loop: true
@@ -16,7 +16,7 @@ banner:
   min_height: "38vh"
   heading_style: "font-size: 4.25em; font-weight: bold; text-decoration: underline"
   subheading_style: "color: gold"
-tags: Java Spring
+tags: Java Spring back-end
 sidebar: []
 ---
 
