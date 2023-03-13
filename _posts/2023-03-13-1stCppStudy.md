@@ -1,6 +1,6 @@
 ---
 layout: post
-title: C++ 스터디 
+title: 첫 번째 C++ 스터디 
 subtitle: 2023 TCP C++ 스터디 1주차
 author: Jun
 categories: C++
@@ -25,8 +25,8 @@ sidebar: []
 
 * VS Code 설치
 
-* [VSC 에서 C/C++ 코딩 환경 구축하기][1]
-[1]: https://daringfireball.net/projects/markdown/basics
+* [VSC 에서 C/C++ 코딩 환경 구축하기](https://daringfireball.net/projects/markdown/basics)
+
 
 
 
@@ -138,7 +138,11 @@ int main()
 
 
 
-C에는 스택에 대한 라이브러리가 따로 없어서, 이런 자료구조들을 모두 기본적인 '배열'이나 '연결 리스트' 등을 이용하여 직접 구현해 주어야 했습니다. 
+
+
+C에는 스택에 대한 라이브러리가 따로 없어서, 이런 자료구조들을 모두 기본적인 '배열'이나 '연결 리스트' 등을 이용하여 직접 구현해 주어야 했다. 
+
+
 
 
 
@@ -185,34 +189,37 @@ int main()
 
 
 
+
+
 ## 그럼 C 말고 C++ 만 공부하면 되지 않을까요?
 
 ![problem](/assets/images/banners/2023-03-13/stack.png)
 
 
-[C를 공부해야 하는 이유][2]
-[2]: https://therceres.tistory.com/8
+[C를 공부해야 하는 이유](https://therceres.tistory.com/8)
+[C++를 공부해야 하는 이유](https://php-style.selfhow.com/post/?id=776)
 
-[C++를 공부해야 하는 이유][3]
-[3]: https://php-style.selfhow.com/post/?id=776
+
+
+
 
 
 
 ### C로 입출력 해보기
 
-<입력 예시>
-전효정
-21
+<입력 예시>  
+전효정  
+21  
 
-<출력 예시>
-21 학번 전효정님, 안녕하세요! 
-우리 함께 열심히 C++ 공부를 해봅시다. 
+<출력 예시>  
+21 학번 전효정님, 안녕하세요!  
+우리 함께 열심히 C++ 공부를 해봅시다.  
 
 
-### 위 코드를 C++ 로 바꾸어 보기
+### 위 코드를 C++ 로 바꾸어 보기  
 
-* C 언어에서는 입력을 받을 때 scanf() 함수를 사용하였다. 그렇다면 C++ 에서는?
-* C 언어에서는 출력을 할 때 printf() 함수를 사용하였다. 그렇다면 C++ 에서는?
+* C 언어에서는 입력을 받을 때 scanf() 함수를 사용하였다. 그렇다면 C++ 에서는?  
+* C 언어에서는 출력을 할 때 printf() 함수를 사용하였다. 그렇다면 C++ 에서는?  
 
 
 {% highlight C++ %}
@@ -228,3 +235,10 @@ int main()
 
 
 ### 문제를 풀어보며 C++ 의 '입출력'과 친해지기
+
+백준 그룹 -> TCP C++ 스터디 -> 1주차
+
+백준 2557번. Hello World  
+백준 10171번. 고양이  
+백준 10172번. 개  
+백준 10926번. ??!  
