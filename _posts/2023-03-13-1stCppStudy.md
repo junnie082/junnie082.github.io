@@ -196,7 +196,9 @@ int main()
 ![problem](/assets/images/banners/2023-03-13/stack.png)
 
 
-[C를 공부해야 하는 이유](https://therceres.tistory.com/8)
+[C를 공부해야 하는 이유](https://therceres.tistory.com/8)  
+
+
 [C++를 공부해야 하는 이유](https://php-style.selfhow.com/post/?id=776)
 
 
