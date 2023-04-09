@@ -28,7 +28,8 @@ sidebar: []
 
 
 
-![problem](/assets/images/banners/2023-04-09/rank1.png)
+![problem](/assets/images/banners/2023-04-09/rank1.jpg)   
+
 ![problem](/assets/images/banners/2023-04-09/rank2.png)
 
 
