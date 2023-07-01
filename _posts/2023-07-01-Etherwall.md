@@ -156,5 +156,3 @@ Yes. Make sure to run parity with the -geth option. If you notice a missing acco
 # Did you review the DAO code before investing?
 
 ## Using Etherwall with Trezor Wallet Ethereum Hardware Wallet
-
-{% include video id="E0Tryfguxd8" provider="youtube" %}
