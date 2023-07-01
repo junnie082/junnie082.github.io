@@ -157,7 +157,8 @@ Yes. Make sure to run parity with the -geth option. If you notice a missing acco
 
 ## Using Etherwall with Trezor Wallet Ethereum Hardware Wallet
 
-[![Watch the video](https://img.youtube.com/vi/E0Tryfguxd8/0.jpg)](https://youtu.be/E0Tryfguxd8)
+## [![Watch the video](https://img.youtube.com/vi/E0Tryfguxd8/0.jpg)](https://youtu.be/E0Tryfguxd8)
+
 [![Watch the video](https://img.youtube.com/vi/47avnc3mu_E/0.jpg)](https://youtu.be/47avnc3mu_E)
 
 ![etherwall](/assets/images/banners/2023-07-01/etherwall1.png)
