@@ -33,7 +33,7 @@ Etherwall supports the [TREZOR ONE](https://trezor.io) hardware wallet for stori
 
 In full node client mode all data is stored on your computer, but you have to download the full (30GB+ and growing) ethereum blockchain. In thin client mode all your account data stays on your computer. A remote ethereum node is used to get latest blockchain information and send signed transaction.
 
-![etherwall](/assets/images/banners/2023-07-02/etherwall.png)
+![etherwall](/assets/images/banners/2023-07-01/etherwall.png)
 
 # What is geth?
 
@@ -156,3 +156,5 @@ Yes. Make sure to run parity with the -geth option. If you notice a missing acco
 # Did you review the DAO code before investing?
 
 ## Using Etherwall with Trezor Wallet Ethereum Hardware Wallet
+
+{% include video id="E0Tryfguxd8" provider="youtube" %}
