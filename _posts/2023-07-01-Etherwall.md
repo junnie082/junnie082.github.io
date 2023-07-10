@@ -174,7 +174,7 @@ Yes. Make sure to run parity with the -geth option. If you notice a missing acco
 ![icon](/assets/images/banners/2023-07-01/icon.png)  
 Etherwall이 다운로드 됩니다.
 
-![usage1](/assets/images/banners/2023-07-01/usage.png)
+![usage1](/assets/images/banners/2023-07-01/usage1.png)
 
 New accunt 로 새 지갑(?)을 만듭니다.
 
