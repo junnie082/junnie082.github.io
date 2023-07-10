@@ -1,6 +1,6 @@
 ---
 layout: post
-title: STCE 암호동아리 암호 공모전 준비 2주차
+title: STCE 암호동아리 암호 공모전 준비 3주차
 subtitle: Etherwall 오픈 소스 분석하기
 author: Jun
 categories: security
