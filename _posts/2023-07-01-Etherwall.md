@@ -167,3 +167,41 @@ Yes. Make sure to run parity with the -geth option. If you notice a missing acco
 ![etherwall](/assets/images/banners/2023-07-01/etherwall2.png)
 ![etherwall](/assets/images/banners/2023-07-01/etherwall3.png)
 ![etherwall](/assets/images/banners/2023-07-01/etherwall4.png)
+
+# Etherwall 어떻게 사용할까?
+
+![usage1](/assets/images/banners/2023-07-01/usage.png)
+
+New accunt 로 새 지갑(?)을 만듭니다.
+
+![usage2](/assets/images/banners/2023-07-01/usage2.png)
+
+id 는 따로 없고... password 만 입력할 수 있게 되어 있습니다!
+
+![usage3](/assets/images/banners/2023-07-01/usage3.png)
+
+이렇게 내가 만든 지갑(?)을 확인할 수 있구요.
+
+![usage4](/assets/images/banners/2023-07-01/usage4.png)
+
+Setting 에 들어가면, `Geth Data Directory`에서 Ethereum의 경로를 확인할 수 있습니다.
+
+![usage5](/assets/images/banners/2023-07-01/usage5.png)
+
+이 수상한 경로를 찾아 들어가 보기로 합니다.
+
+![usage6](/assets/images/banners/2023-07-01/usage6.png)
+
+`keystore` 라는 더 수상한 폴더가 있습니다. 이 폴더 안에 수상한 이름들의 문서들이 있는 것을 확인할 수 있습니다.
+새로운 지갑(?)을 만들 때마다 생기는 문서들입니다.
+
+![usage7](/assets/images/banners/2023-07-01/usage7.png)
+
+방금 만든 지갑(?)의 문서에 들어가 보면!!
+
+`address`, `crypto`, `iv` 등등... 기초 세미나 시간에 들어 보았던 단어들이 왕창 나옵니다.
+
+특히 `crypto` 에서 `cipher`를 보면, `aes-128-ctr` 암호 알고리즘 ? 운용 모드 ? 를 사용했음을 알 수 있습니다. (소스 코드에서 보았을 때는, 현수 언니께서 주셨던 검색 추천 용어들을 모두 쳐보아도 아무것도 안나왔었는데... 여기에 모두 있었군요!)
+
+![code1](/assets/images/banners/2023-07-01/code1.png)  
+소스 코드는, 우리가 맨 처음에 눌렀던 버튼인 `new account`에서 시작합니다.
