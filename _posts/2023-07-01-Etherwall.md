@@ -170,6 +170,10 @@ Yes. Make sure to run parity with the -geth option. If you notice a missing acco
 
 # Etherwall 어떻게 사용할까?
 
+[Etherwall 홈페이지](https://www.etherwall.com/downloads/)에 들어가서 다운을 받으면  
+![icon](/assets/images/banners/2023-07-01/icon.png)  
+Etherwall이 다운로드 됩니다.
+
 ![usage1](/assets/images/banners/2023-07-01/usage.png)
 
 New accunt 로 새 지갑(?)을 만듭니다.
