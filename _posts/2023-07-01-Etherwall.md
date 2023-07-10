@@ -188,7 +188,7 @@ id 는 따로 없고... password 만 입력할 수 있게 되어 있습니다!
 
 ![usage4](/assets/images/banners/2023-07-01/usage4.png)
 
-Setting 에 들어가면, `Geth Data Directory`에서 Ethereum의 경로를 확인할 수 있습니다.
+Settings 에 들어가면, `Geth Data Directory`에서 Ethereum의 경로를 확인할 수 있습니다.
 
 ![usage5](/assets/images/banners/2023-07-01/usage5.png)
 
