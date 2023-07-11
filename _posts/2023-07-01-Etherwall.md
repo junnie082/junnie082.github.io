@@ -168,7 +168,7 @@ Yes. Make sure to run parity with the -geth option. If you notice a missing acco
 ![etherwall](/assets/images/banners/2023-07-01/etherwall3.png)
 ![etherwall](/assets/images/banners/2023-07-01/etherwall4.png)
 
-# Etherwall 어떻게 사용할까?
+### Etherwall 어떻게 사용할까?
 
 [Etherwall 홈페이지](https://www.etherwall.com/downloads/)에 들어가서 다운을 받으면  
 ![icon](/assets/images/banners/2023-07-01/icon.png)  
