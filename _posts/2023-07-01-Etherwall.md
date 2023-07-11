@@ -209,3 +209,15 @@ Settings 에 들어가면, `Geth Data Directory`에서 Ethereum의 경로를 확
 
 ![code1](/assets/images/banners/2023-07-01/code1.png)  
 소스 코드는, 우리가 맨 처음에 눌렀던 버튼인 `new account`에서 시작합니다.
+
+![code2](/assets/images/banners/2023-07-01/code2.png)
+![code3](/assets/images/banners/2023-07-01/code3.png)
+
+아까부터 계속 눈에 띄던 NodeIPC 는 도대체 뭘까요??
+
+아무리 찾아도 원형 함수가 보이지 않습니다.
+
+혹시나 하여 인터넷에 검색해 보았더니, npm, 즉 node.js 와 관련된 외부 라이브러리 같습니다.  
+![nodeIPC](/assets/images/banners/2023-07-01/nodeIPC.png)
+
+### 이번주는 여기까지!!
