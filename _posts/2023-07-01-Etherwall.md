@@ -207,7 +207,8 @@ Settings 에 들어가면, `Geth Data Directory`에서 Ethereum의 경로를 확
 
 특히 `crypto` 에서 `cipher`를 보면, `aes-128-ctr` 암호 알고리즘 ? 운용 모드 ? 를 사용했음을 알 수 있습니다. (소스 코드에서 보았을 때는, 현수 언니께서 주셨던 검색 [추천 용어들](https://three-fig-f58.notion.site/4c4b847a302040119748bf58e499cdcf)을 모두 쳐보아도 아무것도 안나왔었는데... 여기에 모두 있었군요!)
 
-![code1](/assets/images/banners/2023-07-01/code1.png)  
+![code1](/assets/images/banners/2023-07-01/code1.png)
+
 소스 코드는, 우리가 맨 처음에 눌렀던 버튼인 `new account`에서 시작합니다.
 
 ![code2](/assets/images/banners/2023-07-01/code2.png)
