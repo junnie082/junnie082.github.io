@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 유니티, 스프링부트, 각종 활동 및 고민
+title: 유니티 활용법과 스프링부트 공부
 subtitle: 본격 백엔드 공부 시작
 author: Jun
 categories: Web Game
