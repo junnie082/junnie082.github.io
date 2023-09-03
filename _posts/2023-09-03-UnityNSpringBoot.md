@@ -58,7 +58,7 @@ Unity 는 정말 많은 것들을 알아야 할 수 있을 것 같았다. 프론
 저번주에 `점프투스프링부트` 온라인 교재를 한번 훑어 보았다. 이번주부터는 다시 해당 교재를 복습하고 있다.
 저번주에는 STS (Eclipse) 를 써서 실습을 해보았지만, 이번에는 intellij 를 써서 실습을 해보았다.
 
-[2-01 스프링부트 프로젝트의 구조](https://wikidocs.net/160947)
+#### [2-01 스프링부트 프로젝트의 구조](https://wikidocs.net/160947)
 
 ## src/main/java 디렉터리
 
@@ -94,7 +94,7 @@ application.properties 파일은 환경을 설정한다. 프로젝트의 환경,
 
 그레이들(Gradle)이 사용하는 환경 파일이다. build.gradle 파일에는 프로젝트를 위해 필요한 플러그인과 라이브러리 등을 기술한다.
 
-[2-02 컨트롤러](https://wikidocs.net/160543)
+#### [2-02 컨트롤러](https://wikidocs.net/160543)
 
 ```Java
 package com.mysite.sbb;
@@ -137,7 +137,7 @@ public class MainController {
 
 응답으로 "index" 라는 문자열을 브라우저에 출력하기 위해 index 함수의 리턴값을 String 으로 변경하고 "index" 라는 문자열을 리턴했다. `@ResponseBody` 애너테이션은 URL 요청에 대한 응답으로 문자열을 리턴하라는 의미이다.
 
-[2-03 JPA](https://wikidocs.net/161164)
+#### [2-03 JPA](https://wikidocs.net/161164)
 
 웹 서비스는 데이터를 처리할 때 대부분 데이터베이스를 사용한다.
 그런데 데이터베이스를 사용하려면 SQL 쿼리(query)라는 구조화될 질의를 작성하고 실행하는 등의 복잡한 과정이 필요하다. 이떄 ORM(object relational mapping)을 이용하면 자바 문법만으로도 데이터베이스를 다룰 수 있다. 즉, ORM을 이용하면 개발자가 쿼리를 직접 작성하지 않아도 데이터베이스의 데이터를 처리할 수 있다.
@@ -176,7 +176,7 @@ this.questionRepository.save(q2);
 
 > > JPA는 인터페이스이다. 따라서 인터페이스를 구현하는 실제 클래스가 필요하다. JPA를 구현한 대표적인 실제 클래스에는 하이버네이트(Hibernate)가 있다.
 
-[2-04 엔티티](https://wikidocs.net/161164)
+#### [2-04 엔티티](https://wikidocs.net/161164)
 
 엔티티(Entity)는 데이터베이스 테이블과 매핑되는 자바 클래스를 말한다.
 
