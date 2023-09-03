@@ -22,7 +22,7 @@ sidebar: []
 
 # 2023.09.03.(일)
 
-### Block It 유니티 프로젝트
+## Block It 유니티 프로젝트
 
 기획, 인게임 로직 구현. 방학 동안 잘 끝내 두었다. 이제 정말 유니티를 써서 화면도 만들어 보고 할일들을 조금씩 해 나가야 하는데, 마침 개발 팀장님이 버튼은 어떻게 만드는지, 스크립트 코드는 어떻게 넣는지 방법을 알려 주셨다.
 
@@ -44,7 +44,7 @@ Unity 는 정말 많은 것들을 알아야 할 수 있을 것 같았다. 프론
 
 여하튼 개발 팀장님의 도움으로 이번주에 내가 맡은 일은 할 수 있었다.
 
-### 스프링부트 Spring Boot
+## 스프링부트 Spring Boot
 
 올해가 다가기 전에, 백엔드를 열심히 파보려고 한다.
 그동안 파이썬이나 유니티를 써서 게임이나 키오스크 화면 등도 만들어 보고, 플러터와 다트를 써서 앱도 만들어 보고, 엉망진창 여러 가지를 찍어 먹어 보는 활동을 많이 했었다.
@@ -58,43 +58,43 @@ Unity 는 정말 많은 것들을 알아야 할 수 있을 것 같았다. 프론
 저번주에 `점프투스프링부트` 온라인 교재를 한번 훑어 보았다. 이번주부터는 다시 해당 교재를 복습하고 있다.
 저번주에는 STS (Eclipse) 를 써서 실습을 해보았지만, 이번에는 intellij 를 써서 실습을 해보았다.
 
-#### [2-01 스프링부트 프로젝트의 구조](https://wikidocs.net/160947)
+[2-01 스프링부트 프로젝트의 구조](https://wikidocs.net/160947)
 
-## src/main/java 디렉터리
+### src/main/java 디렉터리
 
 자바 파일을 작성하는 공간. 컨트롤러, 폼과 DTO, 데이터베이스 처리를 위한 엔티티, 서비스 파일 등이 있다.
 
-## SbbApplication.java 파일
+### SbbApplication.java 파일
 
 시작을 담당하느느 파일. <프로젝트명> + Application.java.
 SbbApplcation 클래스 위에는 반드시 `@SpringBootApplication` 애너테이션이 적용되어 있어야 한다.
 이 애너테이션을 통해 스프링부트의 모든 설정이 관리된다.
 
-## src/main/resources 디렉터리
+### src/main/resources 디렉터리
 
 HTML, CSS, JavaScript, 환경파일 등을 작성하는 공간이다.
 
-## templates 디렉터리
+### templates 디렉터리
 
 템플릿 파일을 저장한다. HTML 파일 형태로 자바 객체와 연동되는 파일.
 
-## static 디렉터리
+### static 디렉터리
 
 프로젝트의 스타일 시트(.css), 자바스크립트(.js) 그리고 이미지 파일(.jpg, .png) 등을 저장하는 공간이다.
 
-## application.properties 파일
+### application.properties 파일
 
 application.properties 파일은 환경을 설정한다. 프로젝트의 환경, 데이터베이스 등의 설정을 이 파일에 저장한다.
 
-## src/test/java 디렉터리
+### src/test/java 디렉터리
 
 프로젝트에서 작성한 파일을 테스트하기 위해 테스트 코드를 작성하는 공간이다. JUnit 과 스프링부트의 테스팅 도구를 사용하여 서버를 실행하지 않은 상태에서 src/main/java 디렉터리에 작성한 코드를 테스트할 수 있다.
 
-## build.gradle 파일
+### build.gradle 파일
 
 그레이들(Gradle)이 사용하는 환경 파일이다. build.gradle 파일에는 프로젝트를 위해 필요한 플러그인과 라이브러리 등을 기술한다.
 
-#### [2-02 컨트롤러](https://wikidocs.net/160543)
+[2-02 컨트롤러](https://wikidocs.net/160543)
 
 ```Java
 package com.mysite.sbb;
@@ -137,7 +137,7 @@ public class MainController {
 
 응답으로 "index" 라는 문자열을 브라우저에 출력하기 위해 index 함수의 리턴값을 String 으로 변경하고 "index" 라는 문자열을 리턴했다. `@ResponseBody` 애너테이션은 URL 요청에 대한 응답으로 문자열을 리턴하라는 의미이다.
 
-#### [2-03 JPA](https://wikidocs.net/161164)
+[2-03 JPA](https://wikidocs.net/161164)
 
 웹 서비스는 데이터를 처리할 때 대부분 데이터베이스를 사용한다.
 그런데 데이터베이스를 사용하려면 SQL 쿼리(query)라는 구조화될 질의를 작성하고 실행하는 등의 복잡한 과정이 필요하다. 이떄 ORM(object relational mapping)을 이용하면 자바 문법만으로도 데이터베이스를 다룰 수 있다. 즉, ORM을 이용하면 개발자가 쿼리를 직접 작성하지 않아도 데이터베이스의 데이터를 처리할 수 있다.
@@ -170,19 +170,19 @@ this.questionRepository.save(q2);
 > > ORM의 장점
 > > ORM을 이용하면 데이터베이스 종류에 상관 없이 일관된 코드를 유지할 수 있어서 프로그램을 유지\*보수하기가 편리하다. 또한 내부에서 안전한 SQL 쿼리를 자동으로 생성해 주므로 개발자가 달라도 통일된 쿼리를 작성할 수 있고 오류 발생률도 줄일 수 있다.
 
-## JPA 란?
+### JPA 란?
 
 스프링부트는 JPA(Java Persistence API)를 사용하여 데이터베이스를 처리한다. JPA는 자바 진영에서 ORM(Object-Relational Mapping)의 기술 표준으로 사용하는 인터페이스의 모음이다..
 
 > > JPA는 인터페이스이다. 따라서 인터페이스를 구현하는 실제 클래스가 필요하다. JPA를 구현한 대표적인 실제 클래스에는 하이버네이트(Hibernate)가 있다.
 
-#### [2-04 엔티티](https://wikidocs.net/161164)
+[2-04 엔티티](https://wikidocs.net/161164)
 
 엔티티(Entity)는 데이터베이스 테이블과 매핑되는 자바 클래스를 말한다.
 
 > > 엔티티는 모델 또는 도메인 모델이라고 부르기도 한다.
 
-## 질문 엔티티 작성하기
+### 질문 엔티티 작성하기
 
 ```Java
 package com.mysite.sbb;
@@ -221,20 +221,20 @@ public class Question {
 
 > > 컨트롤러에 `@Controller` 애너테이션을 적용하는 것과 마찬가지로 엔티티는 `@Entity` 애너테이션을 적용해야 한다.
 
-## @Id
+### @Id
 
 고유 번호 id 속성에 적용한 @Id 애너테이션은 id 속성을 기본 키로 지정한다. 기본 키로 지정하면 이제 id 속성의 값은 데이터베이스에 저장할 때 동일한 값으로 저장할 수 없다. 고유 번호를 기본 키로 한 이유는 고유 번호는 엔티티에서 각 데이터를 구분하는
 유효한 값으로 중복되면 안 되기 때문이다.
 
 > > 데이터베이스에서는 id 와 같은 특징을 가진 속성을 기본 키 (primary key) 라고 한다.
 
-## @GeneratedValue
+### @GeneratedValue
 
 `@GeneratedValue` 애너테이션을 적용하면 데이터를 저장할 때 해당 속성에 값을 따로 세팅하지 않아도 1씩 자동으로 증가하여 저장된다. `strategy` 는 고유번호를 생성하는 옵션으로 `GeneratedType.IDENTITY`는 해당 컬럼만의 독립적인 시퀀스를 생성하여 번호를 증가시킬 때 사용한다.
 
 > > strategy 옵션을 생략할 경우에 `@GeneratedValue` 애너테이션이 지정된 컬럼들이 모두 동일한 시퀀스로 번호를 생성하기 때문에 일정한 순서의 고유번호를 가질 수 없게 된다. 이러한 이류로 보통 `GeneratedType.IDENTITY`를 많이 사용한다.
 
-## @Column
+### @Column
 
 엔티티의 속성은 테이블의 컬럼명과 일치하는데 컬럼의 세부 설정을 위해 `@Column` 애너테이션을 사용한다. length 는 컬럼의 길이를 설정할 때 사용하고 columnDefinition 은 컬럼의 속성을 정의할 때 사용한다. `columnDefinition = "TEXT"` 은 "내용"처럼 글자 수를 제한할 수 없을 때 사용한다.
 
@@ -246,7 +246,7 @@ public class Question {
 - 엔티티와 Setter
 - 일반적으로 엔티티에는 Setter 메서드를 구현하지 않고 사용하기를 권한다. 엔티티는 데이터베이스와 바로 연결되어 있으므로 데이터를 자유롭게 변경할 수 있는 Setter 메서드를 허용하는 거시 안전하지 않다고 판단하기 때문이다. 엔티티를 생성할 경우에는 롬복의 `@Builder` 어노테이션을 통한 빌드패턴을 사용하고, 데이터를 변경해야 할 경우에는 그에 해당되는 메서드를 엔티티에 추가하여 데이터를 변경하면 된다.
 
-## 답변 엔티티 생성하기
+### 답변 엔티티 생성하기
 
 ```Java
 package com.mysite.sbb;
