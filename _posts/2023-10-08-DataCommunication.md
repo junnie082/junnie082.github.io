@@ -257,3 +257,108 @@ The conversion involves three techniques
 - In 4B/5B, the 5-bit output that replaces the 4-bit input has no more than one leading zero (left bit) and no more than two trailing zeros (right bits)
   - Never more than three consecutive 0s
 - Some of unused groups are used for control purposes; the others are not used at all
+
+#### Substitution in 4B/5B block coding
+
+- The redundant bits add 20 percent more baud.
+  - Still, the result is less than the biphase scheme which has a signal rate of 2 times that of NRZ-I.
+- Not solve the DC component problem of NRZ-I. If a DC component is unacceptable, we need to use biphase or bipolar encoding.
+
+#### 8B/10B
+
+- Eight binary/ten binary (8B/10B) encoding
+- Greater error detection capability than 4B/5B.
+- The 8B/10B block coding is actually a combination of 5B/6B and 3B/4B encoding
+  - The split is done to simplify the mapping table.
+
+![데이터통신10](/assets/images/banners/2023-10-08/data10.png)
+
+## Scrambling
+
+#### We modify line and block coding to include scrambling, as shown below
+
+- AMI used with scrambling
+
+![데이터통신11](/assets/images/banners/2023-10-08/data11.png)
+
+- Note that scrambling, as opposed to block coding, is done at the same time as encoding.
+- The system needs to insert the required pulses based on the defined scrambling rules.
+- One of common scrambling techniques is B8ZS.
+
+#### B8ZS
+
+- Bipolar with 8-zero substitution (B8ZS)
+- Eight consecutive zero-level voltages are replaced by the sequence 000VB0VB
+  - V: violation, B: bipolar
+
+![데이터통신12](/assets/images/banners/2023-10-08/data12.png)
+
+#### Transmission Mode
+
+- Of primary concern when we are considering the transmission of data from one device to another is the wiring, and of primary concern when we are considering the wiring is the data stream.
+
+- Do we send 1 bit at a time; or do we group bits into larger groups and, if so, how?
+  - The transmission of binary data across a link can be accomplished in either parallel or serial mode. and isochronous
+
+![데이터통신13](/assets/images/banners/2023-10-08/data13.png)
+
+## Parallel Transmission
+
+- Line coding is the process of converting digital data to digital signals.
+
+- We assume that data, in the form of text, numbers, graphical images, audio, or video, are stored in computer memory as sequences of bits.
+
+- Line coding converts a sequence of bits to a digital signal.
+  - At the sender, digital data are encoded into a digital signal
+  - At the receiver, the digital data are recreated by decoding the digital signal.
+
+![데이터통신14](/assets/images/banners/2023-10-08/data14.png)
+
+#### Parallel transmission
+
+- The advantage of parallel transmission is speed.
+- But, expensive
+  - Parallel transmission requires n communication lines (wires in the example) just to transmit the data stream
+- In serial transmission one bit follows another, so we need only one communication channel rather than n to transmit data between two communicating devices
+
+![데이터통신15](/assets/images/banners/2023-10-08/data15.png)
+
+#### Asynchronous Transmission
+
+- The timing of a signal is unimportant.
+  - Instead, information is received and translated by agreed upon patterns.
+- In asynchronous transmission, we send 1 start bit(0) at the beginning and 1 or more stop bits (1s) at the end of each byte. There may be a gap between bytes.
+- Asynchronous here means "asynchronous at the byte level," but the bits are still synchronized; their durations are the same.
+- Cheap and effective.
+- Slower than forms of transmission that can operate without the addition of control information
+- E.g., the connection of a keyboard to a computer is a natural application for asynchronous transmission.
+
+![데이터통신16](/assets/images/banners/2023-10-08/data16.png)
+
+#### Synchronous Transmission
+
+- The bit stream is combined into longer "frames," which may contain multiple bytes.
+- In synchronous transmission, we send bits one after another without start or stop bits or gaps.
+  - It is the responsibility of the receiver to group the bits.
+- The advantage of synchronous transmission is speed
+  - More useful for high-speed applications such as the transmission of data from one computer to another
+- There may be uneven gaps between frames.
+
+## Analog-to-Digital Conversion: PCM, Delta Modulation
+
+- We have an analog signal such as one created by a microphone or camera.
+- We have seen that a digital signal is superior to an analog signal.
+- The tendency today is to change an analog signal to digital data.
+- Now, we describe two techniques, pulse code modulation and delta modulation.
+
+#### Pulse Code Modulation (PCM)
+
+- The most common technique to change an analog signal to digital data (digitalization) is called pulse code modulation (PCM).
+
+- A PCM encoder has three processes, as shown in the next slide.
+
+1. The analog signal is sampled.
+2. The sampled signal is quantized.
+3. The quantized values are encoded as streams of bits.
+
+![데이터통신17](/assets/images/banners/2023-10-08/data17.png)
